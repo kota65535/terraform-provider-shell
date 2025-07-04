@@ -1,4 +1,4 @@
-module github.com/scottwinkler/terraform-provider-shell
+module github.com/kota65535/terraform-provider-shell
 
 go 1.17
 

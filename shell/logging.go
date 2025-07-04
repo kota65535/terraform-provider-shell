@@ -40,7 +40,7 @@ func readOutput(r io.Reader, logCh chan<- string, doneCh chan<- string) {
 	var output strings.Builder
 	for line := range lr.Ch {
 		logCh <- line
-		output.WriteString(line)
+		output.WriteString(line + "\n")
 	}
 	doneCh <- output.String()
 }
